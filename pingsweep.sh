@@ -1,9 +1,14 @@
 #!/bin/bash
 # Ping sweep the Lab
 
-# progress bar - spinny bar
-spinner='|/-\'
-spin_i=0
+spinner_start() {
+    spinner='|/-\'
+    spin_i=0
+    while true; do
+        printf "\r[%c] Pinging %s" "${spinner:spin_i++%${#spinner}:1}" "$1"
+        sleep 0.1
+    done
+}
 
 
 pingsweep() {
@@ -13,11 +18,9 @@ pingsweep() {
 	do
         curr="$base$q"
 
-		# spinner
-		printf "\r[%c] %3d/200 %s" \
-		"${spinner:spin_i++%${#spinner}:1}" \
-		"$q" "$curr"
-
+		# start spinner in background
+		spinner_start "$curr" &
+		SPINNER_PID=$!
 
         # ping once with 1s wait, append output+errors to ping.log
         if ping -c 1 -W 1 "$curr" >> ping.log 2>&1; then
@@ -27,8 +30,8 @@ pingsweep() {
         fi
     done
 
-	# clear spinner line
-	printf "\r%-50s\r" ""
+	# stop spinner
+    spinner_stop "$SPINNER_PID"
 
     # print summary to terminal
     echo
