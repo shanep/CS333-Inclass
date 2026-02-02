@@ -5,9 +5,28 @@ pingsweep() {
 	base="onyxnode"
 	for q in {1..200}
 	do
-		curr="$base$q"
-		ping -c 1 $curr >> ping.log
-	done
+        curr="$base$q"
+        # ping once with 1s wait, append output+errors to ping.log
+        if ping -c 1 -W 1 "$curr" >> ping.log 2>&1; then
+            found+=("$curr")
+        else
+            not_found+=("$curr")
+        fi
+    done
+
+    # print summary to terminal
+    echo
+    echo "Ping sweep summary:"
+    echo "  Found (${#found[@]}): ${found[*]}"
+    echo "  Not found (${#not_found[@]}): ${not_found[*]}"
+
+    # append summary to log as well
+    {
+        echo
+        echo "Ping sweep summary:"
+        echo "  Found (${#found[@]}): ${found[*]}"
+        echo "  Not found (${#not_found[@]}): ${not_found[*]}"
+    } >> ping.log
 }
 
 help() {
