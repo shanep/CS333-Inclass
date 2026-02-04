@@ -6,8 +6,21 @@
 spinner='|/-\'
 spin_i=0
 
+spinner_show() {
+    # $1 = current index, $2 = total, $3 = name
+    local curr_index=$1
+    local total=$2
+    local name=$3
+    printf "\r[%c] %3d/%d %s" \
+        "${spinner:spin_i++%${#spinner}:1}" \
+        "$curr_index" "$total" "$name"
+}
 
-pingsweep() {
+spinner_clear() {
+    printf "\r%-50s\r" ""
+}
+
+pingsweep() {"},{
 	base="onyxnode"
 
 	for q in {1..200}
@@ -15,10 +28,7 @@ pingsweep() {
         curr="$base$q"
 
 		# spinner
-		printf "\r[%c] %3d/200 %s" \
-		"${spinner:spin_i++%${#spinner}:1}" \
-		"$q" "$curr"
-
+        spinner_show "$q" 200 "$curr"
 
         # ping once with 1s wait, append output+errors to ping.log
         if ping -c 1 -W 1 "$curr" >> ping.log 2>&1; then
@@ -29,7 +39,7 @@ pingsweep() {
     done
 
 	# clear spinner line
-	printf "\r%-50s\r" ""
+	spinner_clear
 
     # print summary to terminal
     echo
