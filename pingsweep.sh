@@ -38,6 +38,6 @@ main(){
 		usage
 		exit 1
 	else
-main "$@"
+		main "$@"
 	fi
 
