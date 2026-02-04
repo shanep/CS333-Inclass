@@ -28,8 +28,7 @@ pingsweep() {
     # clear or create ping.log
     : > ping.log
 
-    local`
-	base="onyxnode"
+    local base="onyxnode"
 
 	for q in {1..200}
 	do
