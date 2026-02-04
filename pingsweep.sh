@@ -20,7 +20,15 @@ spinner_clear() {
     printf "\r%-50s\r" ""
 }
 
-pingsweep() {"},{
+pingsweep() {
+    # arrays to hold found and not found nodes
+    local -a found=()
+    local -a not_found=()
+
+    # clear or create ping.log
+    : > ping.log
+
+    local`
 	base="onyxnode"
 
 	for q in {1..200}
