@@ -3,23 +3,27 @@
 
 function pingsweep_cmd() 
 {
-	nodeFound=0
-	nodeNotFound=0
+	local nodeFound=0
+	local total=0
 	local base="onyxnode"
-	ehco "Starting ping sweep..."
-	for i in {1..200}; do
-		ping -c 1 "${base}${i}" &> /dev/null
+	echo "Starting ping sweep..."
+	for i in {1..10}; do 
+		ping -c 1 "${base}${i}" &> ping.log
 		if [ $? -eq 0 ]; then
 			echo "${base}${i} is reachable."
 			nodeFound=$((nodeFound+1))
 		else
 			echo "${base}${i} is not reachable."
-			nodeNotFound=$((nodeNotFound+1))
+			
 		fi
+		total=$((total+1))
 	done
 	echo "Found $nodeFound nodes reachable."
-	echo "Found $nodeNotFound nodes not reachable."
+	echo "Nodes not reachable: $((total - nodeFound))"
+	echo "Total nodes checked: $total"
 }
+
+
 
 cmd_help () 
 {
@@ -32,7 +36,7 @@ function main()
 {
 	while getopts ":ph" opt; do
 		case $opt in
-			p) pingsweep_cmd ;;
+			p) pingsweep_cmd;;
 			h) cmd_help ;;
 			/?) 
 			echo "Invalid option: -$OPTARG" >&2

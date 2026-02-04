@@ -1,48 +1,39 @@
 PING onyxnode10.boisestate.edu (10.29.3.159): 56 data bytes
-
---- onyxnode10.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode11.boisestate.edu (10.29.2.189): 56 data bytes
-
---- onyxnode11.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode12.boisestate.edu (10.29.3.155): 56 data bytes
-
---- onyxnode12.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode13.boisestate.edu (10.29.2.135): 56 data bytes
-
---- onyxnode13.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode14.boisestate.edu (10.29.3.73): 56 data bytes
-
---- onyxnode14.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode15.boisestate.edu (10.29.3.133): 56 data bytes
-
---- onyxnode15.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode16.boisestate.edu (10.29.10.140): 56 data bytes
-
---- onyxnode16.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode17.boisestate.edu (10.29.2.112): 56 data bytes
-
---- onyxnode17.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode18.boisestate.edu (10.29.3.132): 56 data bytes
-
---- onyxnode18.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode19.boisestate.edu (10.29.3.126): 56 data bytes
-
---- onyxnode19.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode20.boisestate.edu (10.29.3.117): 56 data bytes
-
---- onyxnode20.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
-PING onyxnode21.boisestate.edu (10.29.3.95): 56 data bytes
-
---- onyxnode21.boisestate.edu ping statistics ---
-1 packets transmitted, 0 packets received, 100.0% packet loss
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+Request timeout for icmp_seq 3
+Request timeout for icmp_seq 4
+Request timeout for icmp_seq 5
+Request timeout for icmp_seq 6
+Request timeout for icmp_seq 7
+Request timeout for icmp_seq 8
+Request timeout for icmp_seq 9
+Request timeout for icmp_seq 10
+Request timeout for icmp_seq 11
+Request timeout for icmp_seq 12
+Request timeout for icmp_seq 13
+Request timeout for icmp_seq 14
+Request timeout for icmp_seq 15
+Request timeout for icmp_seq 16
+Request timeout for icmp_seq 17
+Request timeout for icmp_seq 18
+Request timeout for icmp_seq 19
+Request timeout for icmp_seq 20
+Request timeout for icmp_seq 21
+Request timeout for icmp_seq 22
+Request timeout for icmp_seq 23
+Request timeout for icmp_seq 24
+Request timeout for icmp_seq 25
+Request timeout for icmp_seq 26
+Request timeout for icmp_seq 27
+Request timeout for icmp_seq 28
+Request timeout for icmp_seq 29
+Request timeout for icmp_seq 30
+Request timeout for icmp_seq 31
+Request timeout for icmp_seq 32
+Request timeout for icmp_seq 33
+Request timeout for icmp_seq 34
+Request timeout for icmp_seq 35
+Request timeout for icmp_seq 36
+Request timeout for icmp_seq 37
