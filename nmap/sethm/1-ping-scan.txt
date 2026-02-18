@@ -1,0 +1,190 @@
+# Nmap 7.92 scan initiated Wed Feb 18 11:04:52 2026 as: nmap -sn -oN 1-ping-scan.txt 10.29.3.0/24
+Nmap scan report for onyxnode93.boisestate.edu (10.29.3.29)
+Host is up (0.0018s latency).
+Nmap scan report for tsw-ccp221.boisestate.edu (10.29.3.30)
+Host is up (0.00068s latency).
+Nmap scan report for cscluster07.boisestate.edu (10.29.3.32)
+Host is up (0.0017s latency).
+Nmap scan report for onyxnode110.boisestate.edu (10.29.3.35)
+Host is up (0.0016s latency).
+Nmap scan report for onyxnode62.boisestate.edu (10.29.3.39)
+Host is up (0.0021s latency).
+Nmap scan report for onyxnode39.boisestate.edu (10.29.3.40)
+Host is up (0.0020s latency).
+Nmap scan report for angstrom.boisestate.edu (10.29.3.41)
+Host is up (0.00072s latency).
+Nmap scan report for cscluster02.boisestate.edu (10.29.3.42)
+Host is up (0.0019s latency).
+Nmap scan report for eng402722.boisestate.edu (10.29.3.44)
+Host is up (0.00066s latency).
+Nmap scan report for dmps-ccp243.boisestate.edu (10.29.3.47)
+Host is up (0.0013s latency).
+Nmap scan report for osamanatouf.boisestate.edu (10.29.3.48)
+Host is up (0.00056s latency).
+Nmap scan report for cscluster00.boisestate.edu (10.29.3.50)
+Host is up (0.00052s latency).
+Nmap scan report for mosel.boisestate.edu (10.29.3.51)
+Host is up (0.00048s latency).
+Nmap scan report for onyxnode109.boisestate.edu (10.29.3.52)
+Host is up (0.0017s latency).
+Nmap scan report for 10.29.3.53
+Host is up (0.00051s latency).
+Nmap scan report for itadmins-mbp-2.boisestate.edu (10.29.3.54)
+Host is up (0.0016s latency).
+Nmap scan report for tsw-ccp243.boisestate.edu (10.29.3.55)
+Host is up (0.0016s latency).
+Nmap scan report for onyxnode23.boisestate.edu (10.29.3.56)
+Host is up (0.0016s latency).
+Nmap scan report for toucan.boisestate.edu (10.29.3.57)
+Host is up (0.00035s latency).
+Nmap scan report for onyxnode24.boisestate.edu (10.29.3.59)
+Host is up (0.0015s latency).
+Nmap scan report for eng401524.boisestate.edu (10.29.3.60)
+Host is up (0.0015s latency).
+Nmap scan report for onyxnode114.boisestate.edu (10.29.3.62)
+Host is up (0.0015s latency).
+Nmap scan report for onyxnode116.boisestate.edu (10.29.3.66)
+Host is up (0.0014s latency).
+Nmap scan report for csstorage3.boisestate.edu (10.29.3.69)
+Host is up (0.0013s latency).
+Nmap scan report for onyxnode70.boisestate.edu (10.29.3.71)
+Host is up (0.00085s latency).
+Nmap scan report for onyxnode14.boisestate.edu (10.29.3.73)
+Host is up (0.0010s latency).
+Nmap scan report for onyxnode30.boisestate.edu (10.29.3.74)
+Host is up (0.0010s latency).
+Nmap scan report for tscw-ccp240.boisestate.edu (10.29.3.75)
+Host is up (0.0011s latency).
+Nmap scan report for theia.boisestate.edu (10.29.3.77)
+Host is up (0.00094s latency).
+Nmap scan report for onyxnode86.boisestate.edu (10.29.3.79)
+Host is up (0.00090s latency).
+Nmap scan report for onyxnode25.boisestate.edu (10.29.3.83)
+Host is up (0.00081s latency).
+Nmap scan report for onyxnode32.boisestate.edu (10.29.3.84)
+Host is up (0.00079s latency).
+Nmap scan report for onyxnode33.boisestate.edu (10.29.3.85)
+Host is up (0.00095s latency).
+Nmap scan report for eng402588.boisestate.edu (10.29.3.87)
+Host is up (0.00071s latency).
+Nmap scan report for onyxnode57.boisestate.edu (10.29.3.89)
+Host is up (0.00090s latency).
+Nmap scan report for onyxnode98.boisestate.edu (10.29.3.90)
+Host is up (0.00088s latency).
+Nmap scan report for onyxnode78.boisestate.edu (10.29.3.91)
+Host is up (0.00090s latency).
+Nmap scan report for brightsign-d1e916000437.boisestate.edu (10.29.3.92)
+Host is up (0.00060s latency).
+Nmap scan report for eng402838.boisestate.edu (10.29.3.93)
+Host is up (0.00058s latency).
+Nmap scan report for onyxnode72.boisestate.edu (10.29.3.94)
+Host is up (0.00087s latency).
+Nmap scan report for onyxnode21.boisestate.edu (10.29.3.95)
+Host is up (0.00082s latency).
+Nmap scan report for onyxnode46.boisestate.edu (10.29.3.96)
+Host is up (0.00071s latency).
+Nmap scan report for onyxnode96.boisestate.edu (10.29.3.98)
+Host is up (0.0017s latency).
+Nmap scan report for onyxnode84.boisestate.edu (10.29.3.99)
+Host is up (0.00076s latency).
+Nmap scan report for onyxnode71.boisestate.edu (10.29.3.100)
+Host is up (0.0016s latency).
+Nmap scan report for onyxnode91.boisestate.edu (10.29.3.101)
+Host is up (0.0016s latency).
+Nmap scan report for eng402607.boisestate.edu (10.29.3.103)
+Host is up (0.00060s latency).
+Nmap scan report for onyxnode74.boisestate.edu (10.29.3.104)
+Host is up (0.0016s latency).
+Nmap scan report for eng403019.boisestate.edu (10.29.3.105)
+Host is up (0.0015s latency).
+Nmap scan report for onyxnode06.boisestate.edu (10.29.3.107)
+Host is up (0.0015s latency).
+Nmap scan report for eng402924.boisestate.edu (10.29.3.108)
+Host is up (0.00049s latency).
+Nmap scan report for onyxnode77.boisestate.edu (10.29.3.109)
+Host is up (0.0014s latency).
+Nmap scan report for eng402001.boisestate.edu (10.29.3.110)
+Host is up (0.00041s latency).
+Nmap scan report for eng401727.boisestate.edu (10.29.3.111)
+Host is up (0.0014s latency).
+Nmap scan report for eng402594.boisestate.edu (10.29.3.112)
+Host is up (0.0014s latency).
+Nmap scan report for onyxnode08.boisestate.edu (10.29.3.113)
+Host is up (0.00015s latency).
+Nmap scan report for dlaserver.boisestate.edu (10.29.3.115)
+Host is up (0.00028s latency).
+Nmap scan report for eng401993.boisestate.edu (10.29.3.116)
+Host is up (0.00075s latency).
+Nmap scan report for onyxnode20.boisestate.edu (10.29.3.117)
+Host is up (0.00097s latency).
+Nmap scan report for dm-rmc-ccp240.boisestate.edu (10.29.3.119)
+Host is up (0.00073s latency).
+Nmap scan report for onyxnode58.boisestate.edu (10.29.3.120)
+Host is up (0.00072s latency).
+Nmap scan report for tsw-ccp368.boisestate.edu (10.29.3.121)
+Host is up (0.0015s latency).
+Nmap scan report for onyxnode75.boisestate.edu (10.29.3.122)
+Host is up (0.00068s latency).
+Nmap scan report for onyxnode52.boisestate.edu (10.29.3.123)
+Host is up (0.00066s latency).
+Nmap scan report for onyxnode19.boisestate.edu (10.29.3.126)
+Host is up (0.00061s latency).
+Nmap scan report for onyxnode50.boisestate.edu (10.29.3.127)
+Host is up (0.00059s latency).
+Nmap scan report for onyxnode34.boisestate.edu (10.29.3.129)
+Host is up (0.00056s latency).
+Nmap scan report for cscluster04.boisestate.edu (10.29.3.130)
+Host is up (0.0013s latency).
+Nmap scan report for onyxnode45.boisestate.edu (10.29.3.131)
+Host is up (0.00053s latency).
+Nmap scan report for onyxnode18.boisestate.edu (10.29.3.132)
+Host is up (0.00051s latency).
+Nmap scan report for onyxnode15.boisestate.edu (10.29.3.133)
+Host is up (0.00049s latency).
+Nmap scan report for cscluster05.boisestate.edu (10.29.3.135)
+Host is up (0.0012s latency).
+Nmap scan report for eng402014.boisestate.edu (10.29.3.137)
+Host is up (0.00042s latency).
+Nmap scan report for cscluster06.boisestate.edu (10.29.3.138)
+Host is up (0.0011s latency).
+Nmap scan report for onyxnode107.boisestate.edu (10.29.3.140)
+Host is up (0.00048s latency).
+Nmap scan report for cscluster08.boisestate.edu (10.29.3.141)
+Host is up (0.0011s latency).
+Nmap scan report for onyxnode37.boisestate.edu (10.29.3.143)
+Host is up (0.00043s latency).
+Nmap scan report for onyxnode90.boisestate.edu (10.29.3.144)
+Host is up (0.0010s latency).
+Nmap scan report for onyxnode38.boisestate.edu (10.29.3.145)
+Host is up (0.00042s latency).
+Nmap scan report for onyxnode88.boisestate.edu (10.29.3.146)
+Host is up (0.00099s latency).
+Nmap scan report for csclustertest.boisestate.edu (10.29.3.147)
+Host is up (0.00098s latency).
+Nmap scan report for zahura-lab.boisestate.edu (10.29.3.149)
+Host is up (0.00094s latency).
+Nmap scan report for dmps-ccp368.boisestate.edu (10.29.3.150)
+Host is up (0.0012s latency).
+Nmap scan report for dm-rmc-ccp352.boisestate.edu (10.29.3.151)
+Host is up (0.00090s latency).
+Nmap scan report for onyxnode65.boisestate.edu (10.29.3.152)
+Host is up (0.00089s latency).
+Nmap scan report for onyxnode79.boisestate.edu (10.29.3.153)
+Host is up (0.00087s latency).
+Nmap scan report for onyxnode56.boisestate.edu (10.29.3.154)
+Host is up (0.00085s latency).
+Nmap scan report for onyxnode12.boisestate.edu (10.29.3.155)
+Host is up (0.00084s latency).
+Nmap scan report for onyxnode80.boisestate.edu (10.29.3.156)
+Host is up (0.00082s latency).
+Nmap scan report for onyxnode73.boisestate.edu (10.29.3.157)
+Host is up (0.00080s latency).
+Nmap scan report for onyxnode108.boisestate.edu (10.29.3.158)
+Host is up (0.00078s latency).
+Nmap scan report for onyxnode10.boisestate.edu (10.29.3.159)
+Host is up (0.00076s latency).
+Nmap scan report for dmps-ccp242.boisestate.edu (10.29.3.160)
+Host is up (0.047s latency).
+Nmap scan report for dmps-ccp221.boisestate.edu (10.29.3.161)
+Host is up (0.047s latency).
+# Nmap done at Wed Feb 18 11:04:58 2026 -- 256 IP addresses (94 hosts up) scanned in 5.94 seconds
