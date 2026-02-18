@@ -1,4 +1,9 @@
 #!/bin/bash
-# Ping Sweep Script - IP range or hostname prefix
 
-echo "TODO: Implement the ping sweep script according to the specifications in the README.md file."
+base="onyxnode"
+
+for i in {1..200}
+    do
+        curr="$base$i"
+        ping -c 1 $curr
+    done

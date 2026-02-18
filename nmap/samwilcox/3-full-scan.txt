@@ -1,0 +1,222 @@
+# Nmap 7.92 scan initiated Wed Feb 18 11:31:42 2026 as: nmap -sV -sC -oN 3-full-scan.txt 10.29.2.122
+Nmap scan report for bsudistlearn-t.boisestate.edu (10.29.2.122)
+Host is up (0.0050s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT    STATE SERVICE   VERSION
+22/tcp  open  ssh       (protocol 2.0)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-2.0-CrestronSSH
+80/tcp  open  http      Crestron Webserver
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 301 Moved Permanently
+|     Set-Cookie: TRACKID=40a916d011e3d3b684a7d9d7821407525be73b4767a82a42c1188fb77bbdd578; Path=/; Version=1; Secure; HttpOnly
+|     Location: https:///index_banner.html
+|     X-Frame-Options: SAMEORIGIN
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     Cache-Control: no-cache, no-store, must-revalidate, private
+|     Pragma: no-cache
+|     Content-Length: 0
+|     Connection: close
+|     Date: Sat, 14 Mar 1970 02:26:25 GMT
+|     Server: Crestron Webserver
+|   HTTPOptions: 
+|     HTTP/1.0 403 Forbidden
+|     Content-Type: text/html
+|     Content-Length: 341
+|     Connection: close
+|     Date: Sat, 14 Mar 1970 02:26:26 GMT
+|     Server: Crestron Webserver
+|     <?xml version="1.0" encoding="iso-8859-1"?>
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+|     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+|     <head>
+|     <title>403 Forbidden</title>
+|     </head>
+|     <body>
+|     <h1>403 Forbidden</h1>
+|     </body>
+|     </html>
+|   RTSPRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Type: text/html
+|     Content-Length: 345
+|     Connection: close
+|     Date: Sat, 14 Mar 1970 02:26:26 GMT
+|     Server: Crestron Webserver
+|     <?xml version="1.0" encoding="iso-8859-1"?>
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+|     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+|     <head>
+|     <title>400 Bad Request</title>
+|     </head>
+|     <body>
+|     <h1>400 Bad Request</h1>
+|     </body>
+|_    </html>
+|_http-title: Did not follow redirect to https://bsudistlearn-t.boisestate.edu/index_banner.html
+|_http-server-header: Crestron Webserver
+443/tcp open  ssl/https Crestron Webserver
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 Not Found
+|     Content-Type: text/html
+|     X-Frame-Options: SAMEORIGIN
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     Cache-Control: no-cache, no-store, must-revalidate, private
+|     Pragma: no-cache
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     Content-Security-Policy: default-src https: wss: data: 'unsafe-inline' 'unsafe-eval' blob:; img-src * data:; frame-src 'self' blob:; frame-ancestors 'self' 
+|     Content-Length: 341
+|     Connection: close
+|     Date: Sat, 14 Mar 1970 02:26:32 GMT
+|     Server: Crestron Webserver
+|     <?xml version="1.0" encoding="iso-8859-1"?>
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+|     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+|     <head>
+|     <title>404 Not Found</title>
+|     </head>
+|     <body>
+|     <h1>404 Not Found</h1>
+|     </body>
+|     </html>
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Set-Cookie: TRACKID=d6091172b48611c64ad661e4cb7791764417ce68b381720725ee65751262b680; Path=/; Version=1; Secure; HttpOnly
+|     Content-Type: text/html
+|     Accept-Ranges: bytes
+|     ETag: "2180821132"
+|     Last-Modified: Thu, 01 Jan 2009 00:00:00 GMT
+|     X-Frame-Options: SAMEORIGIN
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     Cache-Control: no-cache, no-store, must-revalidate, private
+|     Pragma: no-cache
+|     Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     Content-Security-Policy: default-src https: wss: data: 'unsafe-inline' 'unsafe-eval' blob:; img-src * data:; frame-src 'self' blob:; frame-ancestors 'self' 
+|     Content-Length: 5935
+|     Connection: close
+|     Date: Sat, 14 Mar 1970 02:26:31 GMT
+|     Server: Crestron Webserver
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <style>
+|     body {font-family: Arial,
+|   HTTPOptions: 
+|     HTTP/1.0 403 Forbidden
+|     Content-Type: text/html
+|     Content-Length: 341
+|     Connection: close
+|     Date: Sat, 14 Mar 1970 02:26:32 GMT
+|     Server: Crestron Webserver
+|     <?xml version="1.0" encoding="iso-8859-1"?>
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+|     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+|     <head>
+|     <title>403 Forbidden</title>
+|     </head>
+|     <body>
+|     <h1>403 Forbidden</h1>
+|     </body>
+|_    </html>
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=BSUDISTLEARN-T.crestron/organizationName=Crestron Electronics, Inc./stateOrProvinceName=NJ/countryName=US
+| Subject Alternative Name: DNS:BSUDISTLEARN-T.boisestate.edu, DNS:BSUDISTLEARN-T
+| Not valid before: 2025-02-18T18:50:01
+|_Not valid after:  2026-03-07T18:50:01
+|_http-server-header: Crestron Webserver
+|_ssl-date: TLS randomness does not represent time
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port22-TCP:V=7.92%I=7%D=2/18%Time=69960594%P=x86_64-redhat-linux-gnu%r(
+SF:NULL,15,"SSH-2\.0-CrestronSSH\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.92%I=7%D=2/18%Time=69960594%P=x86_64-redhat-linux-gnu%r(
+SF:GetRequest,1D8,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nSet-Cookie:
+SF:\x20TRACKID=40a916d011e3d3b684a7d9d7821407525be73b4767a82a42c1188fb77bb
+SF:dd578;\x20Path=/;\x20Version=1;\x20Secure;\x20HttpOnly\r\nLocation:\x20
+SF:https:///index_banner\.html\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-Cont
+SF:ent-Type-Options:\x20nosniff\r\nX-XSS-Protection:\x201;\x20mode=block\r
+SF:\nCache-Control:\x20no-cache,\x20no-store,\x20must-revalidate,\x20priva
+SF:te\r\nPragma:\x20no-cache\r\nContent-Length:\x200\r\nConnection:\x20clo
+SF:se\r\nDate:\x20Sat,\x2014\x20Mar\x201970\x2002:26:25\x20GMT\r\nServer:\
+SF:x20Crestron\x20Webserver\r\n\r\n")%r(HTTPOptions,1F1,"HTTP/1\.0\x20403\
+SF:x20Forbidden\r\nContent-Type:\x20text/html\r\nContent-Length:\x20341\r\
+SF:nConnection:\x20close\r\nDate:\x20Sat,\x2014\x20Mar\x201970\x2002:26:26
+SF:\x20GMT\r\nServer:\x20Crestron\x20Webserver\r\n\r\n<\?xml\x20version=\"
+SF:1\.0\"\x20encoding=\"iso-8859-1\"\?>\n<!DOCTYPE\x20html\x20PUBLIC\x20\"
+SF:-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\n\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitiona
+SF:l\.dtd\">\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x20xml:lan
+SF:g=\"en\"\x20lang=\"en\">\n\x20<head>\n\x20\x20<title>403\x20Forbidden</
+SF:title>\n\x20</head>\n\x20<body>\n\x20\x20<h1>403\x20Forbidden</h1>\n\x2
+SF:0</body>\n</html>\n")%r(RTSPRequest,1F7,"HTTP/1\.0\x20400\x20Bad\x20Req
+SF:uest\r\nContent-Type:\x20text/html\r\nContent-Length:\x20345\r\nConnect
+SF:ion:\x20close\r\nDate:\x20Sat,\x2014\x20Mar\x201970\x2002:26:26\x20GMT\
+SF:r\nServer:\x20Crestron\x20Webserver\r\n\r\n<\?xml\x20version=\"1\.0\"\x
+SF:20encoding=\"iso-8859-1\"\?>\n<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//
+SF:DTD\x20XHTML\x201\.0\x20Transitional//EN\"\n\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\"
+SF:>\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x20xml:lang=\"en\"
+SF:\x20lang=\"en\">\n\x20<head>\n\x20\x20<title>400\x20Bad\x20Request</tit
+SF:le>\n\x20</head>\n\x20<body>\n\x20\x20<h1>400\x20Bad\x20Request</h1>\n\
+SF:x20</body>\n</html>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=2/18%Time=6996059B%P=x86_64-redhat-linux
+SF:-gnu%r(GetRequest,1A25,"HTTP/1\.0\x20200\x20OK\r\nSet-Cookie:\x20TRACKI
+SF:D=d6091172b48611c64ad661e4cb7791764417ce68b381720725ee65751262b680;\x20
+SF:Path=/;\x20Version=1;\x20Secure;\x20HttpOnly\r\nContent-Type:\x20text/h
+SF:tml\r\nAccept-Ranges:\x20bytes\r\nETag:\x20\"2180821132\"\r\nLast-Modif
+SF:ied:\x20Thu,\x2001\x20Jan\x202009\x2000:00:00\x20GMT\r\nX-Frame-Options
+SF::\x20SAMEORIGIN\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Protecti
+SF:on:\x201;\x20mode=block\r\nCache-Control:\x20no-cache,\x20no-store,\x20
+SF:must-revalidate,\x20private\r\nPragma:\x20no-cache\r\nStrict-Transport-
+SF:Security:\x20max-age=31536000;\x20includeSubDomains\r\nContent-Security
+SF:-Policy:\x20default-src\x20https:\x20wss:\x20data:\x20'unsafe-inline'\x
+SF:20'unsafe-eval'\x20blob:;\x20img-src\x20\*\x20data:;\x20frame-src\x20's
+SF:elf'\x20\x20blob:;\x20frame-ancestors\x20'self'\x20\r\nContent-Length:\
+SF:x205935\r\nConnection:\x20close\r\nDate:\x20Sat,\x2014\x20Mar\x201970\x
+SF:2002:26:31\x20GMT\r\nServer:\x20Crestron\x20Webserver\r\n\r\n<!DOCTYPE\
+SF:x20html>\r\n<html>\r\n<head>\r\n\x20\x20<meta\x20name=\"viewport\"\x20c
+SF:ontent=\"width=device-width,\x20initial-scale=1\">\r\n\x20\x20<style>\r
+SF:\nbody\x20{font-family:\x20Arial,\x20")%r(HTTPOptions,1F1,"HTTP/1\.0\x2
+SF:0403\x20Forbidden\r\nContent-Type:\x20text/html\r\nContent-Length:\x203
+SF:41\r\nConnection:\x20close\r\nDate:\x20Sat,\x2014\x20Mar\x201970\x2002:
+SF:26:32\x20GMT\r\nServer:\x20Crestron\x20Webserver\r\n\r\n<\?xml\x20versi
+SF:on=\"1\.0\"\x20encoding=\"iso-8859-1\"\?>\n<!DOCTYPE\x20html\x20PUBLIC\
+SF:x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\n\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transi
+SF:tional\.dtd\">\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x20xm
+SF:l:lang=\"en\"\x20lang=\"en\">\n\x20<head>\n\x20\x20<title>403\x20Forbid
+SF:den</title>\n\x20</head>\n\x20<body>\n\x20\x20<h1>403\x20Forbidden</h1>
+SF:\n\x20</body>\n</html>\n")%r(FourOhFourRequest,37E,"HTTP/1\.0\x20404\x2
+SF:0Not\x20Found\r\nContent-Type:\x20text/html\r\nX-Frame-Options:\x20SAME
+SF:ORIGIN\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Protection:\x201;
+SF:\x20mode=block\r\nCache-Control:\x20no-cache,\x20no-store,\x20must-reva
+SF:lidate,\x20private\r\nPragma:\x20no-cache\r\nStrict-Transport-Security:
+SF:\x20max-age=31536000;\x20includeSubDomains\r\nContent-Security-Policy:\
+SF:x20default-src\x20https:\x20wss:\x20data:\x20'unsafe-inline'\x20'unsafe
+SF:-eval'\x20blob:;\x20img-src\x20\*\x20data:;\x20frame-src\x20'self'\x20\
+SF:x20blob:;\x20frame-ancestors\x20'self'\x20\r\nContent-Length:\x20341\r\
+SF:nConnection:\x20close\r\nDate:\x20Sat,\x2014\x20Mar\x201970\x2002:26:32
+SF:\x20GMT\r\nServer:\x20Crestron\x20Webserver\r\n\r\n<\?xml\x20version=\"
+SF:1\.0\"\x20encoding=\"iso-8859-1\"\?>\n<!DOCTYPE\x20html\x20PUBLIC\x20\"
+SF:-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\n\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitiona
+SF:l\.dtd\">\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x20xml:lan
+SF:g=\"en\"\x20lang=\"en\">\n\x20<head>\n\x20\x20<title>404\x20Not\x20Foun
+SF:d</title>\n\x20</head>\n\x20<body>\n\x20\x20<h1>404\x20Not\x20Found</h1
+SF:>\n\x20</body>\n</html>\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 18 11:34:17 2026 -- 1 IP address (1 host up) scanned in 155.22 seconds
