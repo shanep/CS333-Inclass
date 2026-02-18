@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Wed Feb 18 11:14:34 2026 as: nmap -sV -p 1-1024 -oN 2-service-scan.txt 10.29.3.152
+Nmap scan report for onyxnode65.boisestate.edu (10.29.3.152)
+Host is up (0.00072s latency).
+Not shown: 1022 closed tcp ports (conn-refused)
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 8.7 (protocol 2.0)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 18 11:14:40 2026 -- 1 IP address (1 host up) scanned in 6.19 seconds

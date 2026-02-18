@@ -141,15 +141,25 @@ function host_sweep()
 
 	local tmpdir
 	tmpdir=$(mktemp -d)
-	local width=${#end}
+	local width=0
 
 	printf "%s\n" "----------------------------"
 	printf "Scanning %s%0*d - %s%0*d ...\n" "$prefix" "$width" "$start" "$prefix" "$width" "$end"
 	printf "%s\n" "----------------------------"
 
+	if [[ "$start" =~ ^0 ]]; then
+		width=${#start}
+	fi
+
+
 	for ((i=start; i<=end; i++)); do
 		(
-			num=$(printf "%0*d" "$width" "$i")
+			if [[ "$width" -gt 0 ]]; then
+				num=$(printf "%0*d" "$width" "$i")
+			else
+				num="$i"
+			fi
+
 			host="${prefix}${num}"
 
 			if ping_host "$host"; then
