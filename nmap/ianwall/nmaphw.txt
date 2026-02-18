@@ -1,0 +1,11 @@
+Host discovery:
+1.	254 IP addresses were found
+2.	94 hosts are up
+3.	See 1-ping-scan.txt
+4.	10.29.3.74
+
+Port scanning and service detection:
+1.	I scanned onyxnode65 (10.29.3.152)
+2.	It only had 2 open ports, 22 and 111
+3.	The services running are ssh and rpcbind
+
