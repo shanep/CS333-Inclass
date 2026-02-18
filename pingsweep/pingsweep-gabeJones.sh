@@ -48,8 +48,8 @@ pingSweep() {
 		perMaxCharAmount=50
 		percentStr="["
 
-		for j in $(seq 1 $perMaxCharAmount); do
-			if [ $j -le $((percent / 2)) ]; then
+		for j in $(seq 0 $perMaxCharAmount); do
+			if [ $j -le $((percent / (100 / $perMaxCharAmount))) ]; then
 				percentStr=${percentStr}"*"
 			else
 				percentStr=${percentStr}"."
