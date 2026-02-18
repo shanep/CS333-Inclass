@@ -1,0 +1,15 @@
+# Nmap 7.92 scan initiated Wed Feb 18 11:21:42 2026 as: nmap -sV -p 1-1024 -oN 2-service-scan.txt 10.29.3.160
+Nmap scan report for dmps-ccp242.boisestate.edu (10.29.3.160)
+Host is up (0.0013s latency).
+Not shown: 1021 closed tcp ports (conn-refused)
+PORT    STATE SERVICE   VERSION
+22/tcp  open  ssh       (protocol 2.0)
+80/tcp  open  http      Microsoft Windows Embedded CE Web Server
+443/tcp open  ssl/https
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port22-TCP:V=7.92%I=7%D=2/18%Time=6996033E%P=x86_64-redhat-linux-gnu%r(
+SF:NULL,15,"SSH-2\.0-CrestronSSH\r\n");
+Service Info: OS: Windows CE 7.0; CPE: cpe:/o:microsoft:windows_ce
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 18 11:21:57 2026 -- 1 IP address (1 host up) scanned in 15.00 seconds
