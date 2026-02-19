@@ -40,8 +40,18 @@ Before you can scan a computer for open ports or services, you first need to kno
 
 Use the [pingsweep.sh](../pingsweep/) script that we created in the previous exercise to perform a ping sweep and collect all the necessary information for nmap.
 
+### Step 2: Try a List Scan (No Actual Scanning)
 
-### Step 2: Basic Ping Scan Nmap Command
+Nmap can show you what it *would* scan without actually sending any packets. This is useful for double-checking your target range.
+
+```bash
+nmap -sL 10.0.0.0/24
+```
+**What this does:**
+- `-sL` — "list scan" that only lists the targets, it does not send anything to the network
+- Notice it also tries to look up hostnames using reverse DNS
+
+### Step 3: Basic Ping Scan Nmap Command
 
 Use Nmap's ping scan to send a small message to each address and listen for a reply. It is the simplest way to discover hosts. Compare the results to your ping sweep script and see if you find the same hosts.
 
@@ -78,7 +88,7 @@ Each "Host is up" line is a device that responded. The number in parentheses (li
 3. List every IP address that responded.
 4. Which IP address is yours?
 
-### Step 3: Save Your Results to a File
+### Step 4: Save Your Results to a File
 
 It is useful to save scan results so you can look at them later. Nmap can write output to a file for you.
 
@@ -97,7 +107,7 @@ After it finishes, you can view the saved file:
 cat 1-ping-scan.txt
 ```
 
-### Step 4: Understanding ARP vs ICMP
+### Step 5: Understanding ARP vs ICMP
 
 When you scan a network you are directly connected to (a "local" network), Nmap uses **ARP** (Address Resolution Protocol) instead of regular ping. ARP is more reliable because:
 
@@ -107,21 +117,6 @@ When you scan a network you are directly connected to (a "local" network), Nmap 
 
 You do not need to do anything different. Nmap automatically picks the best method. But it is important to understand that "ping scan" does not always mean ICMP ping.
 
-### Step 5: Try a List Scan (No Actual Scanning)
-
-Nmap can show you what it *would* scan without actually sending any packets. This is useful for double-checking your target range.
-
-```bash
-nmap -sL 10.0.0.0/24
-```
-
-**What this does:**
-- `-sL` — "list scan" that only lists the targets, it does not send anything to the network
-- Notice it also tries to look up hostnames using reverse DNS
-
-**Record your findings:**
-1. Did any IP addresses resolve to hostnames?
-2. If so, what can the hostnames tell you about what those machines might be?
 
 ## Port Scanning and Service Detection
 
@@ -176,23 +171,7 @@ Each line tells you:
 2. How many open ports did it have?
 3. What services appear to be running?
 
-### Step 2: Scan All Live Hosts
-
-Now scan all the hosts you discovered. You can give Nmap multiple targets:
-
-```bash
-nmap 10.0.0.1 10.0.0.5 10.0.0.12
-```
-
-Or, to scan the entire range again (Nmap will automatically skip hosts that are down):
-
-```bash
-nmap 10.0.0.0/24 -oN 2-port-scan.txt
-```
-
-This will take longer than the ping scan because Nmap is checking 1,000 ports on each live host.
-
-### Step 3: Service Version Detection
+### Step 2: Service Version Detection
 
 Knowing that port 80 is open tells you a web server is probably running, but what *kind* of web server? Apache? Nginx? What version? This matters because specific versions may have known vulnerabilities.
 
@@ -215,7 +194,7 @@ PORT   STATE SERVICE VERSION
 
 Now you can see not just "ssh" but the exact software and version: `OpenSSH 8.9p1`.
 
-### Step 4: Scan Specific Ports
+### Step 3: Scan Specific Ports
 
 Sometimes you only care about certain ports. You can tell Nmap to scan specific ones:
 
@@ -265,45 +244,7 @@ This scans ports 1 through 1024 (all "well-known" ports) with version detection 
 
 ---
 
-## OS Detection, Scripting Engine, and Reporting
-
-**Goal:** Identify operating systems, run Nmap's built-in vulnerability scripts, and compile a professional network report.
-
-### Step 1: Operating System Detection (Instructor Demo)
-
-**NOTE:** Students do not have sudo privileges, so you will not be able to run this scan yourself. Your instructor will demonstrate this scan in class.
-
-Nmap can guess what operating system a host is running by analyzing how it responds to specially crafted packets. Different operating systems implement network protocols in slightly different ways, and Nmap uses these differences as fingerprints.
-
-> **Note:** OS detection requires root/admin privileges. You will need to use `sudo`.
-
-```bash
-sudo nmap -O 10.0.0.5
-```
-
-**What the new part means:**
-- `sudo` — runs the command with administrator privileges (you may need to enter your password)
-- `-O` — enable OS detection (that is a capital letter O, not the number zero)
-
-**What to look for in the output:**
-
-```
-OS details: Linux 5.4 - 5.15
-```
-
-or
-
-```
-OS details: Microsoft Windows 10 1903 - 21H2
-```
-
-Nmap may show multiple guesses with confidence percentages. The highest percentage is its best guess.
-
-**Record your findings:**
-1. What operating systems were detected on the live hosts?
-2. Were any results surprising?
-
-### Step 2: The Nmap Scripting Engine (NSE)
+## The Nmap Scripting Engine (NSE)
 
 Nmap includes hundreds of built-in scripts that can check for specific vulnerabilities, gather extra information, and even attempt basic brute-force tests. These scripts are organized into categories.
 
@@ -317,7 +258,7 @@ Nmap includes hundreds of built-in scripts that can check for specific vulnerabi
 | `safe`      | Scripts that are non-intrusive and safe to run |
 | `auth`      | Checks for authentication weaknesses           |
 
-### Step 3: Run Default Scripts
+### Step 1: Run Default Scripts
 
 The default scripts gather useful extra information without being aggressive:
 
@@ -349,7 +290,7 @@ A web server port might show:
 
 This tells you the web page title and the server header.
 
-### Step 4: Combine Everything into One Scan
+### Step 2: Combine Everything into One Scan
 
 You can combine multiple scan types into one command. This is the most common "thorough scan" that security professionals use:
 
@@ -363,7 +304,7 @@ This single command does:
 - `-O` — detect the operating system
 - `-oN` — save results to a file
 
-### Step 5: Check for Vulnerabilities
+### Step 3: Check for Vulnerabilities
 
 > **Important:** Only run vulnerability scans on lab machines you have permission to test.
 
@@ -385,7 +326,7 @@ This may take several minutes. When it finishes, look for output that says thing
 
 Each **CVE** (Common Vulnerabilities and Exposures) is a publicly known security flaw. The number (like 7.5) is the severity score from 0 to 10, where 10 is the most critical.
 
-### Step 6: Scan a Specific Service with a Specific Script
+### Step 4: Scan a Specific Service with a Specific Script
 
 You can also run individual scripts. For example, to check what HTTP methods a web server allows:
 

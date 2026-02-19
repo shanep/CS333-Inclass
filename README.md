@@ -11,10 +11,6 @@ You will do periodic pull requests to submit your completed exercises. Each exer
 > [!CAUTION]
 > Please be careful when running some of these scripts. Do NOT run aggressive scans on the lab network without permission. Always start with a simple ping sweep to discover hosts before doing more thorough scans. Tools like Nmap can be very powerful and can cause disruptions if used improperly, some systems (such as AWS) may even block your IP and ban your account if you run too many scans. Always ask your instructor if you are unsure about which scan to run.  More details can be found [here](https://nmap.org/book/legal-issues.html).
 
-
-> [!WARNING]
-> The excuse "but I didn't know it was illegal" is not a valid defense in court, so please make sure you understand the legal implications of your actions. Just imagine if you got pulled over for speeding and your excuse was "but I didn't know it was illegal to drive that fast". You would still get a ticket, and you would still be responsible for your actions. The same applies to network scanning. Always make sure you have explicit permission to scan a network before doing so.
-
 > [!TIP]
 > All activities that we do in the lab are legal and ethical because we have explicit permission to scan the lab network.
 
