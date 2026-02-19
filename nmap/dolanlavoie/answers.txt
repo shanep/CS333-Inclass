@@ -1,0 +1,8 @@
+1. 256 addressed scanned
+2. 94 hosts up
+3. see ping-scan.txt
+4. 10.29.3.133
+
+1. 10.29.3.160
+2. 6
+3. SSH, HTTP, HTTPS, IIIMSF
