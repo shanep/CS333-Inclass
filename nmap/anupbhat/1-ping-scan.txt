@@ -1,0 +1,8 @@
+# Nmap 7.92 scan initiated Thu Feb 19 22:00:29 2026 as: nmap -sn -oN 1-ping-scan.txt 132.178.227.0/25
+Nmap scan report for l3-cs-132-178-227-1.boisestate.edu (132.178.227.1)
+Host is up (0.00059s latency).
+Nmap scan report for onyx.boisestate.edu (132.178.227.11)
+Host is up (0.00071s latency).
+Nmap scan report for wittgenstein.boisestate.edu (132.178.227.12)
+Host is up (0.00061s latency).
+# Nmap done at Thu Feb 19 22:00:31 2026 -- 128 IP addresses (3 hosts up) scanned in 1.93 seconds
