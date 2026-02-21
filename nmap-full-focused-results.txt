@@ -1,0 +1,3 @@
+Host IP scanned - 10.29.3.158
+Open ports - 2
+Running services - SSH and rpcbind
