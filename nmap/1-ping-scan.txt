@@ -1,0 +1,5 @@
+# Nmap 7.92 scan initiated Wed Feb 18 10:57:18 2026 as: nmap -sn -oN 1-ping-scan.txt onyxnode91
+Nmap scan report for onyxnode91 (10.29.3.101)
+Host is up (0.00098s latency).
+rDNS record for 10.29.3.101: onyxnode91.boisestate.edu
+# Nmap done at Wed Feb 18 10:57:18 2026 -- 1 IP address (1 host up) scanned in 0.03 seconds
