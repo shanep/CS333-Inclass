@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Sun Feb 22 13:41:10 2026 as: nmap -sn -oN 1-ping-scan.txt 10.29.10.0/24
+Nmap scan report for 10.29.10.1
+Host is up (0.00089s latency).
+Nmap scan report for onyxnode00.boisestate.edu (10.29.10.139)
+Host is up (0.00093s latency).
+Nmap scan report for onyxnode16.boisestate.edu (10.29.10.140)
+Host is up (0.00095s latency).
+Nmap scan report for onyxnode03.boisestate.edu (10.29.10.145)
+Host is up (0.00023s latency).
+Nmap scan report for onyxnode101.boisestate.edu (10.29.10.149)
+Host is up (0.0011s latency).
+Nmap scan report for onyxnode102.boisestate.edu (10.29.10.150)
+Host is up (0.0011s latency).
+# Nmap done at Sun Feb 22 13:41:12 2026 -- 256 IP addresses (6 hosts up) scanned in 2.43 seconds

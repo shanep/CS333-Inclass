@@ -1,0 +1,28 @@
+1. How many total addresses were scanned?
+256
+
+2. How many hosts are up?
+6
+
+3. List every IP address that responded.
+10.29.10.1
+10.29.10.139
+10.29.10.140
+10.29.10.145
+10.29.10.149
+10.29.10.150
+
+4. Which IP address is yours?
+10.29.2.145
+
+Port Scanning and Service Detection Questions
+
+5. Which host did you scan?
+10.29.2.140 onyxnode16.boisestate.edu
+
+6. How many open ports did it have?
+2
+
+7. What services appear to be running?
+ssh     OpenSSH 8.7 (protocol 2.0)
+rpcbind 2-4 (RPC #100000)
