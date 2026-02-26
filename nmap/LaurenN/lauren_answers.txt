@@ -1,0 +1,19 @@
+Part 1:
+1.How many total addresses were scanned?
+	256
+2. How many hosts are up
+	89
+3. List every IP address that responded
+	its in ip_log.txt
+
+4. Which IP address is yours?
+	10.29.2.146 (Onyxnode100)
+
+Part 2:
+1. Which host did you scan? 
+	onyxnode22 (10.29.2.93)
+
+2.How many open ports did it have?
+	2
+3. What services appear to be running?
+	ssh, rpcbind
