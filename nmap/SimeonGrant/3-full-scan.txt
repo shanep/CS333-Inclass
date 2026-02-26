@@ -1,0 +1,88 @@
+# Nmap 7.92 scan initiated Wed Feb 18 11:31:49 2026 as: nmap -sV -sC -oN 3-full-scan.txt 10.29.3.47
+Nmap scan report for dmps-ccp243.boisestate.edu (10.29.3.47)
+Host is up (0.0042s latency).
+Not shown: 993 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE      VERSION
+22/tcp    open     ssh          (protocol 2.0)
+| fingerprint-strings:
+|   NULL:
+|_    SSH-2.0-CrestronSSH
+80/tcp    open     http         Microsoft Windows Embedded CE Web Server
+|_http-title: Server Busy
+|_http-server-header: Microsoft-WinCE/7.00
+443/tcp   open     https        Microsoft-WinCE/7.00
+|_http-title: Server Busy
+| ssl-cert: Subject: commonName=DMPS-CCP243.crestron/organizationName=Crestron Electronics/stateOrProvinceName=NJ/countryName=US
+| Subject Alternative Name: DNS:DMPS-CCP243.boisestate.edu, DNS:DMPS-CCP243
+| Not valid before: 2025-11-03T17:54:26
+|_Not valid after:  2026-11-20T17:54:26
+|_http-server-header: Microsoft-WinCE/7.00
+843/tcp   open     unknown
+50002/tcp open     iiimsf?
+| fingerprint-strings:
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, NULL, RPCCheck, SSLSessionReq, ibm-db2:
+|     C2I-DMPS-200-AUDIO Console
+|     C2I-DMPS-200-AUDIO>
+|   GenericLines, GetRequest, HTTPOptions, RTSPRequest:
+|     C2I-DMPS-200-AUDIO Console
+|     C2I-DMPS-200-AUDIO>
+|     C2I-DMPS-200-AUDIO>
+|     C2I-DMPS-200-AUDIO>
+|   Help:
+|     C2I-DMPS-200-AUDIO Console
+|     C2I-DMPS-200-AUDIO>
+|     HELP - Detailed help available. Type a command followed by
+|     space and '?' to see options for that command
+|     (i.e. HELP ?)
+|     HELP ALL will display a list of all commands.
+|     HELP DEVICE will display a list of cmds specific to this device.
+|     HELP ETHERNET will display a list of Ethernet commands.
+|     HELP SYSTEM will display a list of general system commands.
+|     C2I-DMPS-200-AUDIO>
+|   TLSSessionReq, TerminalServerCookie:
+|     C2I-DMPS-200-AUDIO Console
+|     C2I-DMPS-200-AUDIO>
+|     Incomplete Command
+|_    C2I-DMPS-200-AUDIO>
+50003/tcp open     crestron-ctp Crestron C2I-DMPS-200-VIDEO automation system text ui
+50006/tcp filtered unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port22-TCP:V=7.92%I=7%D=2/18%Time=6996059D%P=x86_64-redhat-linux-gnu%r(
+SF:NULL,15,"SSH-2\.0-CrestronSSH\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port50002-TCP:V=7.92%I=7%D=2/18%Time=6996059D%P=x86_64-redhat-linux-gnu
+SF:%r(NULL,33,"\r\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-AUDIO
+SF:>")%r(ibm-db2,33,"\r\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200
+SF:-AUDIO>")%r(GenericLines,5D,"\r\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC
+SF:2I-DMPS-200-AUDIO>\r\nC2I-DMPS-200-AUDIO>\r\nC2I-DMPS-200-AUDIO>")%r(Ge
+SF:tRequest,5D,"\r\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-AUDI
+SF:O>\r\nC2I-DMPS-200-AUDIO>\r\nC2I-DMPS-200-AUDIO>")%r(HTTPOptions,5D,"\r
+SF:\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-AUDIO>\r\nC2I-DMPS-
+SF:200-AUDIO>\r\nC2I-DMPS-200-AUDIO>")%r(RTSPRequest,5D,"\r\nC2I-DMPS-200-
+SF:AUDIO\x20Console\r\n\r\nC2I-DMPS-200-AUDIO>\r\nC2I-DMPS-200-AUDIO>\r\nC
+SF:2I-DMPS-200-AUDIO>")%r(RPCCheck,33,"\r\nC2I-DMPS-200-AUDIO\x20Console\r
+SF:\n\r\nC2I-DMPS-200-AUDIO>")%r(DNSVersionBindReqTCP,33,"\r\nC2I-DMPS-200
+SF:-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-AUDIO>")%r(DNSStatusRequestTCP,33
+SF:,"\r\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-AUDIO>")%r(Help
+SF:,1B4,"\r\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-AUDIO>\rHEL
+SF:P\x20-\x20Detailed\x20help\x20available\.\x20\x20Type\x20a\x20command\x
+SF:20followed\x20by\r\x20\x20\x20\x20\x20\x20\x20a\x20space\x20and\x20'\?'
+SF:\x20to\x20see\x20options\x20for\x20that\x20command\r\x20\x20\x20\x20\x2
+SF:0\x20\x20\(i\.e\.\x20HELP\x20\?\)\rHELP\x20ALL\x20will\x20display\x20a\
+SF:x20list\x20of\x20all\x20commands\.\rHELP\x20DEVICE\x20will\x20display\x
+SF:20a\x20list\x20of\x20cmds\x20specific\x20to\x20this\x20device\.\rHELP\x
+SF:20ETHERNET\x20will\x20display\x20a\x20list\x20of\x20Ethernet\x20command
+SF:s\.\rHELP\x20SYSTEM\x20will\x20display\x20a\x20list\x20of\x20general\x2
+SF:0system\x20commands\.\r\r\nC2I-DMPS-200-AUDIO>")%r(SSLSessionReq,33,"\r
+SF:\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-AUDIO>")%r(Terminal
+SF:ServerCookie,62,"\r\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-
+SF:AUDIO>\rBad\x20or\x20Incomplete\x20Command\r\nC2I-DMPS-200-AUDIO>")%r(T
+SF:LSSessionReq,62,"\r\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-
+SF:AUDIO>\rBad\x20or\x20Incomplete\x20Command\r\nC2I-DMPS-200-AUDIO>")%r(K
+SF:erberos,33,"\r\nC2I-DMPS-200-AUDIO\x20Console\r\n\r\nC2I-DMPS-200-AUDIO
+SF:>");
+Service Info: Host: C2I-DMPS-200-VIDEO-00107FD80544; OS: Windows CE 7.0; Device: specialized; CPE: cpe:/o:microsoft:windows_ce, cpe:/h:crestron:c2i-dmps-200-video
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 18 11:34:41 2026 -- 1 IP address (1 host up) scanned in 172.57 seconds
