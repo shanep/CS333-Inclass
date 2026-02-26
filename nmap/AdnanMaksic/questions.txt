@@ -1,0 +1,37 @@
+Step 2
+    1. How many total addresses were scanned?
+    768
+
+    2. How many hosts are up?
+    172
+
+    3. List every IP address that responded.
+    see [1-ping-scan.txt](./1-ping-scan.txt)
+
+    4. Which IP address is yours?
+    10.29.2.192
+
+
+Step 5
+    1. Did any IP addresses resolve to hostnames?
+    Yeah Most resolved to .boisestate.edu hostnames such as
+    onyxnode10.boisestate.edu, mars.boisestate.edu, valkyrie.boisestate.edu,
+    iapetus.boisestate.edu, frege.boisestate.edu, toucan.boisestate.edu...
+
+    2. If so, what can the hostnames tell you about what those machines might be?
+    Names like onyxnode suggest nodes...
+    eng402016 suggests engineering lab machines..
+    dlaserver suggests a learning server...
+    corpusling suggests a linguistics research machine...
+    names like mars/valkyrie/theia suggest experimental servers...
+
+
+Port Scanning - Step 1:
+    1. Which host did you scan?
+    onyxnode10 (10.29.3.159)
+
+    2. How many open ports did it have?
+    2
+
+    3. What services appear to be running?
+    SSH (port 22) and rpcbind (port 111)
