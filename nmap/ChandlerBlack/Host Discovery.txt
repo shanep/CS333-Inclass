@@ -1,0 +1,9 @@
+Host Discovery:
+256 IPs
+94 Hosts Up
+Onyxnode Network Range: 10.29.3.0 - 10.29.3.256
+my ip: 10.29.3.85
+
+Nmap of 10.29.3.156
+Open ports: 22(ssh), 111(rpcbind)
+
