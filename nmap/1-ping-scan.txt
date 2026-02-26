@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Wed Feb 18 11:02:04 2026 as: nmap -sn -oN 1-ping-scan.txt 10.29.3/24
+Nmap scan report for l3-cs-10-29-0-1.boisestate.edu (10.29.0.1)
+Host is up (0.00068s latency).
+# Nmap done at Wed Feb 18 11:02:07 2026 -- 256 IP addresses (1 host up) scanned in 3.04 seconds
