@@ -1,0 +1,2 @@
+# Nmap 7.92 scan initiated Sun Feb 22 23:39:09 2026 as: nmap -sn -oN 1-ping-scan.txt 10.0.0.0/24
+# Nmap done at Sun Feb 22 23:40:53 2026 -- 256 IP addresses (0 hosts up) scanned in 104.20 seconds
